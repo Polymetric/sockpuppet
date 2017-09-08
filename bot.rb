@@ -38,7 +38,7 @@ class PongBot < SlackRubyBot::Bot
 
       # Witt's user id is U6Y31HS3U
       # Austin's user id is U6YV7NDC6
-      client.web_client.chat_postMessage(channel: 'U6YV7NDC6', text: crafted_message, as_user: true)
+      client.web_client.chat_postMessage(channel: ENV['FORWARD_USER_TOKEN'], text: crafted_message, as_user: true)
     end
   end
 end
