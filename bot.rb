@@ -1,5 +1,11 @@
 #!/usr/bin/env ruby
 
+# Required environment variables
+# SLACK_API_TOKEN = 'xoxb-***'
+# this is the bot's token, get it from the bot's integraton settings page
+# FORWARD_USER_TOKEN = 'U***'
+# This is the user id for the user you want to be able to sockpuppet this bot
+
 require 'slack-ruby-bot'
 require 'pry'
 
